@@ -1,6 +1,10 @@
 <div class="profile">
   <h1>Oscar Heimdahl</h1>
-  <h4>
-    {{ title }}
+  <h4
+    [ngStyle]="{
+      transform: showTitle ? 'translateY(0)' : 'translateY(100vh)'
+    }"
+  >
+    Civilingenjör i Interaktion och Design
   </h4>
 </div>

@@ -14,23 +14,15 @@ export class LazerComponent implements OnInit {
   constructor() {
     this.x = Math.random() * window.innerWidth;
     this.y = Math.random() * window.innerHeight;
-    setTimeout(
-      () =>
-        setInterval(() => {
-          if (this.y > window.innerHeight) {
-            this.y = window.innerHeight * -0.5;
-            // this.transition = 'top 0s';
-          } else if (this.y < 0) {
-            this.y = window.innerHeight * 1.5;
-            // this.transition = 'top 2s';
-          }
-        }, Math.random() * 4000 + 2000),
-      2000
-    );
-    this.y =
-      Math.random() > 0.5
-        ? window.innerHeight * 1.5
-        : window.innerHeight * -0.5;
+
+    setInterval(() => {
+      if (this.y > window.innerHeight) this.y = window.innerHeight * -0.5;
+      else if (this.y < 0) this.y = window.innerHeight * 1.5;
+    }, Math.random() * 4000 + 2000),
+      (this.y =
+        Math.random() > 0.5
+          ? window.innerHeight * 1.5
+          : window.innerHeight * -0.5);
   }
 
   ngOnInit(): void {}

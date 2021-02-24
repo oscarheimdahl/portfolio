@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-profile',
@@ -8,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class ProfileComponent implements OnInit {
   title = '';
   cursor = '|';
+  showName: boolean = false;
+  showTitle: boolean = false;
 
   constructor() {
-    setTimeout(() => this.buildTitle(0), 2000);
+    setTimeout(() => (this.showTitle = true), 1200);
     setInterval(() => (this.cursor = this.cursor === '|' ? '' : '|'), 1000);
   }
 
