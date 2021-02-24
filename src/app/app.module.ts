@@ -5,12 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WallpaperComponent } from './wallpaper/wallpaper.component';
 import { ProfileComponent } from './profile/profile.component';
+import { AboutComponent } from './about/about.component';
+import { LazerComponent } from './lazer/lazer.component';
+import { LazerHandlerComponent } from './lazer-handler/lazer-handler.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WallpaperComponent,
-    ProfileComponent
+    ProfileComponent,
+    AboutComponent,
+    LazerComponent,
+    LazerHandlerComponent
   ],
   imports: [
     BrowserModule,
