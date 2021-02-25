@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
   mobile: boolean = false;
-  constructor() {}
+  shadow: string = 'box-shadow: rgba(49, 20, 209, 0.356) 0px 48px 100px 0px;';
 
   ngOnInit(): void {
     if (window.screen.width < 500) {

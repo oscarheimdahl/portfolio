@@ -1,5 +1,5 @@
 <div class="lazer-handler" #handler>
   <div *ngFor="let lazer of lazers">
-    <app-lazer></app-lazer>
+    <app-lazer *ngIf="showLazers"></app-lazer>
   </div>
 </div>
