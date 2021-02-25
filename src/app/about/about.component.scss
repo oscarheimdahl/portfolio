@@ -5,7 +5,7 @@
 }
 
 .about-container {
-  height: 120vh;
+  height: 140vh;
   width: 100%;
   background-color: #111;
   display: grid;
@@ -26,8 +26,8 @@
     animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    --shdw: #1d0350de;
-    --shdw2: #500350d2;
+    --shdw2: #0e509bde;
+    --shdw: #500350d2;
 
     img {
       width: 250px;
@@ -42,10 +42,9 @@
 @media only screen and (max-width: 600px) {
   .about-container {
     height: 100vh;
-
-    .hideOnMobile {
-      display: none;
-    }
+  }
+  .hideOnMobile {
+    display: none;
   }
 }
 

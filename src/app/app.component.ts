@@ -8,12 +8,15 @@ import { WallpaperComponent } from './wallpaper/wallpaper.component';
 })
 export class AppComponent {
   title = 'portfolio';
-  showProfile: string = 'block';
-  showProjects: string = 'none';
+  showProfile: string = 'visible';
+  showProjects: string = 'hidden';
 
   @HostListener('window:scroll', ['$event']) // for window scroll events
   onScroll(event: any) {
-    this.showProfile = window.scrollY >= window.innerHeight ? 'none' : 'block';
-    this.showProjects = window.scrollY >= window.innerHeight ? 'block' : 'none';
+    if (window.screen.width < 500) return;
+    const showProjects = window.scrollY >= window.innerHeight * 1.1;
+
+    this.showProfile = showProjects ? 'hidden' : 'visible';
+    this.showProjects = showProjects ? 'visible' : 'hidden';
   }
 }
