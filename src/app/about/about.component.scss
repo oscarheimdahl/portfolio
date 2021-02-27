@@ -12,6 +12,41 @@
   justify-items: center;
   align-items: center;
 
+  .scroll-indicator {
+    position: absolute;
+    // background-color: red;
+    height: 100px;
+    width: 100px;
+    left: calc(50% - 50px);
+    top: calc(100vh - 100px);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    transition: opacity 1s;
+
+    img {
+      width: 40%;
+      height: 40%;
+      filter: invert(1);
+      animation: fadeIn;
+      animation-delay: 6s;
+      animation-iteration-count: infinite;
+      animation-duration: 3s;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+
   .about {
     display: flex;
     align-items: center;

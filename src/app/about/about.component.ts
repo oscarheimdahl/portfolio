@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-about',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent implements OnInit {
+    @Input() scrollIndicator: string |undefined;
   mobile: boolean = false;
   shadow: string = 'box-shadow: rgba(49, 20, 209, 0.356) 0px 48px 100px 0px;';
 
