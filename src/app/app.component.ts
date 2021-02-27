@@ -15,10 +15,10 @@ export class AppComponent {
   @HostListener('window:scroll', ['$event']) // for window scroll events
   onScroll(event: any) {
     this.scrollIndicator = '0';
-    if (window.screen.width < 500) return;
-    const showProjects = window.scrollY >= window.innerHeight * 1.1;
+    // if (window.screen.width < 500) return;
+    // const showProjects = window.scrollY >= window.innerHeight * 1.1;
 
-    this.showProfile = showProjects ? 'hidden' : 'visible';
-    this.showProjects = showProjects ? 'visible' : 'hidden';
+    // this.showProfile = showProjects ? 'hidden' : 'visible';
+    // this.showProjects = showProjects ? 'visible' : 'hidden';
   }
 }

@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { LazerComponent } from './lazer/lazer.component';
 import { LazerHandlerComponent } from './lazer-handler/lazer-handler.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { ProjectComponent } from './project/project.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ProjectsComponent } from './projects/projects.component';
     AboutComponent,
     LazerComponent,
     LazerHandlerComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,

@@ -5,7 +5,7 @@
 }
 
 .about-container {
-  height: 140vh;
+  height: calc(100vh + 200px);
   width: 100%;
   background-color: #111;
   display: grid;
@@ -35,14 +35,8 @@
       opacity: 0;
     }
     @keyframes fadeIn {
-      0% {
-        opacity: 0;
-      }
-      50% {
-        opacity: 1;
-      }
       100% {
-        opacity: 0;
+        opacity: 1;
       }
     }
   }
@@ -54,7 +48,6 @@
     max-width: 800px;
     padding: 2rem;
     color: white;
-    // background: linear-gradient(120deg, #021741, #1a0342, #15023b);
     background: #111;
     border-radius: 8px;
     animation: shadowChange;
@@ -71,15 +64,6 @@
       border-radius: 50%;
       filter: grayscale(1);
     }
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .about-container {
-    height: 100vh;
-  }
-  .hideOnMobile {
-    display: none;
   }
 }
 
