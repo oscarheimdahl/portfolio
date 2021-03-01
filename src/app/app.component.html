@@ -1,4 +1,9 @@
-<app-wallpaper> </app-wallpaper>
+<app-wallpaper>
+  <app-profile [style.visibility]="showProfile"></app-profile>
+  <app-contact [style.visibility]="showContact"></app-contact>
+</app-wallpaper>
+<div class="transparent"></div>
 <app-about [scrollIndicator]="scrollIndicator"> </app-about>
 <app-projects> </app-projects>
+<div class="transparent"></div>
 <router-outlet></router-outlet>

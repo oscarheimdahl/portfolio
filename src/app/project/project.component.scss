@@ -4,12 +4,13 @@
   color: white;
   box-sizing: border-box;
   transition: filter 500ms;
+  max-width: 700px;
 
   .top-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1rem;
+    padding: 1rem;
 
     .link {
       transition: transform 200ms;
