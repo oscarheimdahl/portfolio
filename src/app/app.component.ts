@@ -7,7 +7,7 @@ import { WallpaperComponent } from './wallpaper/wallpaper.component';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'portfolio';
+  title = 'Oscar Heimdahl';
   showProfile: string = 'visible';
   showContact: string = 'hidden';
   scrollIndicator: string = '1';

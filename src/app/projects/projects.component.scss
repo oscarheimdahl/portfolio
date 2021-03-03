@@ -2,15 +2,13 @@
   width: 100%;
   min-height: 100vh;
   padding: 5rem 0;
-  //   background: linear-gradient(45deg, #111, #222);
   background: #111;
   display: grid;
   flex-wrap: wrap;
   justify-content: center;
-  //   align-items: center;
   gap: 4rem;
   justify-items: center;
-  grid-template-columns: 500px 500px;
+  // grid-template-columns: 500px 500px;
 
   position: relative;
   padding-top: 4rem;
