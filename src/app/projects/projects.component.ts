@@ -59,4 +59,18 @@ const projects: project[] = [
     image: 'assets/images/projects/tetris.png',
     text: 'Tetris :)',
   },
+  {
+    title: "'word-type'",
+    link: 'https://oscarheimdahl.github.io/word-type/',
+    image: 'assets/images/projects/wordtype.png',
+    text:
+      'Ett snabbt projekt för att prova på Angular, skriv så snabbt du kan!',
+  },
+  {
+    title: 'Utvecklare Uniaden',
+    link: 'https://www.uniaden.com',
+    image: 'assets/images/projects/uniaden.png',
+    text:
+      'Inför Uniaden 2021 var jag utvecklare. Arbetet gick ut på att underhålla Uniadens hemsida och se till att alla tekniska behov var mötta.',
+  },
 ];
