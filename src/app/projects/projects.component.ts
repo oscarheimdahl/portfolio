@@ -36,7 +36,7 @@ const projects: project[] = [
   },
   {
     title: 'Gradient Picker',
-    link: 'https://oscarheimdahl.github.io/gradient-picker/',
+    link: 'https://gradient.oscarheimdahl.se',
     image: 'assets/images/projects/gradient.png',
     text:
       'Ett smidigt verktyg som gör det enkelt att skapa fina gradienter, som sedan kan exporteras till css eller som bild.',
