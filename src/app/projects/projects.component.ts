@@ -21,6 +21,12 @@ export class ProjectsComponent implements OnInit {
 
 const projects: project[] = [
   {
+    title: 'Quick-Emoji',
+    link: 'https://quickemoji.oscarheimdahl.se/',
+    image: 'assets/images/projects/quick-emoji.png',
+    text: 'Ett program till mac som gör det lättare att skriva emojis.',
+  },
+  {
     title: 'Typer',
     link: 'https://typer-14eb6.firebaseapp.com/',
     image: 'assets/images/projects/typer.png',
